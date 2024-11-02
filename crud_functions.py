@@ -3,7 +3,7 @@ connection = sqlite3.connect('products.db')
 cursor = connection.cursor()
 
 def initiate_db():
-    cursor.execute('DELETE FROM Products')
+    
     cursor.execute(''
                    'CREATE TABLE IF NOT EXISTS Products('
                    'id INTEGER PRIMARY KEY,'
